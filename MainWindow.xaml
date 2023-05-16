@@ -1,0 +1,21 @@
+﻿<Window x:Class="Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Every minute" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="61" Width="95" Click="Button_Click"/>
+        <Button Content="Every hour" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1" Height="56" Width="92"/>
+        <Button Content="Every day" HorizontalAlignment="Left" Margin="548,190,0,0" VerticalAlignment="Top" Height="58" Width="92" Click="Button_Click_2"/>
+        <TextBox HorizontalAlignment="Left" Margin="330,68,0,0" TextWrapping="Wrap" Text="Background changer" VerticalAlignment="Top" Name="test"  Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Choose picture" HorizontalAlignment="Left" Margin="154,308,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="223,275,206,10">
+            <WrapPanel Name="Picture_Holder" HorizontalAlignment="Center" Orientation="Horizontal"/>
+
+        </ScrollViewer>
+    </Grid>
+</Window>
